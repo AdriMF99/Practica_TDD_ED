@@ -23,4 +23,19 @@ class FizzBuzzTest {
         assertEquals("Fizz",numACalcular);
     }
 
+    @Test
+    void TesteoNum4_5(){
+        FizzBuzz numCalular = new FizzBuzz();
+        String numACalcular = numCalular.pedirNum(4);
+        String numACalcularDos = numCalular.pedirNum(5);
+        assertEquals("4",numACalcular);
+        assertEquals("Buzz",numACalcularDos);
+    }
+    @Test
+    void TesteoNum6(){
+        FizzBuzz numCalular = new FizzBuzz();
+        String numACalcular = numCalular.pedirNum(6);
+        assertEquals("Fizz",numACalcular);
+    }
+
 }
