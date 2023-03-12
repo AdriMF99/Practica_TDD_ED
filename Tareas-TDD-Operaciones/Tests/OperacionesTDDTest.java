@@ -40,11 +40,20 @@ class OperacionesTDDTest {
         assertEquals(4,calcular);
     }
     @Test
-    void TestSuma_1_2__Devuelve4(){
+    void TestSuma_1_2__Devuelvemenos1(){
         //ARRANGE
         OperacionesTDD num = new OperacionesTDD();
         //ACT
         int calcular = num.suma("1,2,");
+        //ASSERT
+        assertEquals(-1,calcular);
+    }
+    @Test
+    void TestSuma_1_2_Menos2_DevuelveMenos1(){
+        //ARRANGE
+        OperacionesTDD num = new OperacionesTDD();
+        //ACT
+        int calcular = num.suma("1,2,-2");
         //ASSERT
         assertEquals(-1,calcular);
     }
