@@ -57,5 +57,14 @@ class OperacionesTDDTest {
         //ASSERT
         assertEquals(-1,calcular);
     }
+    @Test
+    void TestSuma_5_1002_Devuelve5_NumeroIgnorado(){
+        //ARRANGE
+        OperacionesTDD num = new OperacionesTDD();
+        //ACT
+        int calcular = num.suma("5,1002");
+        //ASSERT
+        assertEquals(5,calcular);
+    }
 
 }
